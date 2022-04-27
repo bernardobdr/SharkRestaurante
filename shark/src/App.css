@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+ body{
+ background-color: #162728;
+} 
+
+nav li a{
+  animation: mover 880ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.descricao{
+  animation: move 880ms;
+  animation-delay: 200ms;
+  animation-fill-mode: backwards;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+@keyframes move {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(-15%);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
+
+@keyframes mover {
+  from {
+    opacity: 0;
+    transform: translatey(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}
+
+
