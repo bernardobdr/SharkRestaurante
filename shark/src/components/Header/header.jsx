@@ -11,8 +11,8 @@ const Head = styled.header`
  padding: 2px 22px;
  font-size: 1.2rem;
  flex-wrap:wrap;
- height: 100px;
-background-color: black;
+ height: 120px;
+ background-color: black;
 
 
 
